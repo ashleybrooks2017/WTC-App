@@ -22,37 +22,81 @@
 		
 	</head>
 	<body>
+		<div class="wtcLogo">
+			<img class="pure-img" id="skedgeLogo" src="Assets/Images/wtcLogo.png">
+		</div>
 	<h1>Schedule</h1>
-	Below is a list of the breakout sessions. Please indicate your interest by selecting the checkboxes next to the event of interest. 
-	<br>Once you are finished, click "Submit preferences" to let the organizers know which sessions you will be attending.
+		<p>Below is a list of the breakout sessions. Please indicate your interest by selecting the checkboxes next to the event of interest. 
+		<br>Once you are finished, click "Submit preferences" to let the organizers know which sessions you will be attending.</p>
 	<h2>Breakfast</h2>
-    <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">7:30am - 8:00am: Buffet Style Breakfast in the Main Ballroom</label>
-	<br>
+    	<input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1" checked>7:30am - 8:00am: Buffet Style Breakfast in the Main Ballroom</input><br>
 	<h2>Morning Sessions</h2>
-	<form id = "morningSesh1" name = "sessions">
-	<p class = "questions">
-	<input type="checkbox" name="breakfast" id="TMNT">8:00am - 9:30 am: Main Session<br>
-	<input type="radio" name="session1" id="TMNT">9:30am - 10:45am: Diversity in the Workplace<br>
-	<input type="radio" name="session1" id="TMNT">9:45am - 11:00am: Encouraging Creativity<br>
-	<input type="radio" name="session1" id="TMNT">10:00am - 11:00am: Utilizing Resources in Technology<br>
-	<input type="radio" name="session2" id="TMNT">11:15am - 12:30pm: Making Memorable Experiences<br>
-	<input type="radio" name="session2" id="TMNT">11:30am - 12:45pm: Work Smarter, Not Harder<br>
-	<input type="radio" name="session2" id="TMNT">11:45am - 1:00pm: Technology Panel Discussion<br>
-	<h2>Lunch</h2>
-	<input type="checkbox" name="lunch" id="TMNT">1:00pm - 2:00pm: Buffet Style Lunch in the Main Ballroom<br>
-	<h2>Afternoon Sessions</h2>
-	<input type="radio" name="session3" id="TMNT">2:15pm - 3:30pm: CEO Q+A<br>
-	<input type="radio" name="session3" id="TMNT">2:15pm - 3:30pm: Scheduling Tips<br>
-	<input type="radio" name="session3" id="TMNT">2:30pm - 3:30pm: Empathy and Communication<br>
-	<input type="radio" name="session4" id="TMNT">3:15pm - 4:30pm: Innovation in Everyday Projects<br>
-	<input type="radio" name="session4" id="TMNT">3:30pm - 4:30pm: Cross Department Collaboration
-	<br>
-	<h2>Closing Ceremony</h2>
-	<input type="checkbox" name="lunch" id="TMNT">4:45pm - 5:00pm: Final Remarks and Survey Session</label>
-	<br><br>
-	<a class="pure-button" href="submitted.html">Submit preferences</a><br><br>
-	<a class="pure-button" href="planner.html">Back to Home</a>
-</p>
+	<form id = "sessions" name = "sessions">
+		<input type="checkbox" name="breakfast" id="mainSesh" checked>8:00am - 9:30 am: <div id="selection" class="idk" style="color: blue;">Main Session</div><br>
+
+		<input type="radio" name="session1" id="diversity">9:30am - 10:45am: 
+			<div id="selection" class="idk" style="color: blue;">Diversity in the Workplace</div><br>
+
+		<input type="radio" name="session1" id="creatitivy">9:45am - 11:00am: 
+			<div id="selection" class="idk" style="color: blue;">Encouraging Creativity</div><br>
+
+		<input type="radio" name="session1" id="techResources">10:00am - 11:00am: 
+			<div id="selection" class="idk" style="color: blue;">Utilizing Resources in Technology</div><br>
+
+		<input type="radio" name="session2" id="makeMemz">11:15am - 12:30pm: 
+			<div id="selection" class="idk" style="color: blue;">Making Memorable Experiences</div><br>
+
+		<input type="radio" name="session2" id="werkSmart">11:30am - 12:45pm: 
+			<div id="selection" class="idk" style="color: blue;">Work Smarter, Not Harder</div><br>
+
+		<input type="radio" name="session2" id="techPanel">11:45am - 1:00pm: 
+			<div id="selection" class="idk" style="color: blue;">Technology Panel Discussion</div><br>
+
+			<h2>Lunch</h2>
+
+		<input type="checkbox" name="lunch" id="lunch" checked>1:00pm - 2:00pm: 
+			<div id="selection" class="idk" style="color: blue;">Buffet Style Lunch in the Main Ballroom</div><br>
+
+			<h2>Afternoon Sessions</h2>
+
+		<input type="radio" name="session3" id="CEO">2:15pm - 3:30pm: 
+			<div id="selection" class="idk" style="color: blue;">CEO Q+A</div><br>
+
+		<input type="radio" name="session3" id="skedge">2:15pm - 3:30pm:
+			<div id="selection" class="idk" style="color: blue;">Scheduling Tips</div><br>
+
+		<input type="radio" name="session3" id="empathyComm">2:30pm - 3:30pm:
+			<div id="selection" class="idk" style="color: blue;">Empathy and Communication</div><br>
+
+		<input type="radio" name="session4" id="innovation">3:15pm - 4:30pm: 
+			<div id="selection" class="idk" style="color: blue;">Innovation in Everyday Projects</div><br>
+
+		<input type="radio" name="session4" id="collaboration">3:30pm - 4:30pm: 
+			<div id="selection" class="idk" style="color: blue;">Cross Department Collaboration</div><br>
+
+		<h2>Closing Ceremony</h2>
+
+		<input type="checkbox" name="lunch" id="lunch" checked>4:45pm - 5:00pm: Final Remarks and Survey Session</label>
+		<br><br>
+	
+		<a class="pure-button" href="submitted.html">Submit preferences</a><br><br>
+		<a class="pure-button" href="planner.html">Back to Home</a>
+</form>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="modalText">Some text in the Modal..</p>
+    <p id="modalInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, pariatur. Alias sunt unde assumenda harum, sapiente deleniti explicabo pariatur in labore culpa excepturi voluptas dicta ipsa esse tenetur laborum aut.</p>
+  </div>
+
+</div>
 
 <script src="assets/javascript/modal.js">
 </script>
