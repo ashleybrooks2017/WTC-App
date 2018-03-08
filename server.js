@@ -1,14 +1,20 @@
+const express = require('express');
 
-//create the server for browser access
-const server = http.createServer((req, res)=>{
-    setResHtml(sql, resql=>{
-      reo = reo.replace('{${table}}', resql);
-      res.writeHead(200, {'Content-Type':'text/html; charset=utf-8'});
-      res.write(reo, 'utf-8');
-      res.end();
-    });
-  });
-  
-  server.listen(8080, ()=>{
-    console.log('Server running at //localhost:8080/');
-  });
+const app = express();
+
+const port = 3000;
+
+require('./routes/api-route')(app);
+require('./routes/html-route')(app);
+app.use(express.static('public'));
+
+app.listen(port, (err) => {
+  if(err)
+  {
+    console.log('Something went wrong.');
+  }
+  else
+  {
+    console.log('App listening on port: ', port);
+  }
+})

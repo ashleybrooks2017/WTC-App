@@ -1,0 +1,25 @@
+{
+  "name": "WTC-App",
+  "version": "1.0.0",
+  "description": "Event App for the World Trade Center Day",
+  "main": "organizer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashleybrooks2017/WTC-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashleybrooks2017/WTC-App/issues"
+  },
+  "homepage": "https://github.com/ashleybrooks2017/WTC-App#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mysql2": "^1.5.2"
+  }
+}
