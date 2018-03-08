@@ -11,10 +11,10 @@ module.exports = function(app)
     });
 
     app.get('/organizer', (req, res) => {
-        res.sendFile(path.join(__dirname, '..', 'organizer.html'));
+        res.sendFile(path.join(__dirname, '..', 'organizerView.html'));
     });
 
-    app.get('/organizer', (req, res) => {
+    app.get('/schedule', (req, res) => {
         res.sendFile(path.join(__dirname, '..', 'schedule.html'));
     });
 }

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ashleybrooks2017/WTC-App#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "mysql2": "^1.5.2"
   }
