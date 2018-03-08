@@ -1,5 +1,22 @@
+body, html {
+ height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+body{
+	background-size: cover;
+	background-opacity: 0.80;
+}
+
+
 
 .wtcLogo{
+	padding-top: 150px;
 	display: block;
     margin-left: auto;
     margin-right: auto;
@@ -12,7 +29,24 @@
 	width: 100%;
 	font-family: 'Yantramanav', sans-serif;
 	text-align: center;
-	font-size: 22px;
-	color: #808080;
+	font-size: 35px;
+	color: #ffa64d;
+	line-height: 1.0;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.link{
+	color: #ffa64d;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	clear: both;
+	width: 100%;
+	font-family: 'Yantramanav', sans-serif;
+}
+
+.pure-button{
+	box-shadow: 10px 5px 5px gray;
+	border-style: ridge;
+
 }
 
